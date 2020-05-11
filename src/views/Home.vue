@@ -1,18 +1,31 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <heroBanner/>
+    <sampleTeachers/>
+    <academicOfferList/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import heroBanner from '@/components/layout/hero_banner'
+import sampleTeachers from '@/components/presentation/some_teachers'
+import academicOfferList from '@/components/layout/academic_offer_list'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    heroBanner,
+    sampleTeachers,
+    academicOfferList
+  },
+  methods:{
+    getData(){
+      //  this.$http.get('todos').then(console.log)
+    }
+  },
+  created(){
+    this.getData()
   }
 }
 </script>
