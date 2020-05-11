@@ -1,4 +1,4 @@
-# mobilesshop
+# Institulo Politecnico Max Henrriquez Urena WebApp Repo
 
 ## Project setup
 ```
